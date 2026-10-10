@@ -1,0 +1,214 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    height: 80px;
+  }
+
+  .lado_izq{
+    position: static;
+    width: 10%;
+    padding: 20px;
+  }
+
+  .lado_centro{
+    position: static;
+    width:90%;
+    padding: 20px;
+  }
+
+  #header_izq img{
+    height: 80px;
+  }
+
+  #header_centro h1{
+    font-size: 20px;
+    color: #989a9a;
+  }
+
+  .main-header .logo img {
+    height: 40px;
+  }
+  
+  .user-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .user-controls img {
+    height: 20px;
+  }
+  
+
+
+  
+  /*----------------------------------*/ 
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    overflow: auto;
+    flex-direction: column;
+    }
+  
+  .menu{
+    display: flex;
+    min-height: 80vh;
+  }
+
+  /*----------------------------------*/
+  /*   MENU IZQUIERDO */
+
+  .lista_izq{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-color: #333;
+    border-style: solid;
+    border-left: white;
+    border-right: white;
+    border-top: white;
+    border-width: 1px;
+  }
+
+  .lista_izq img{
+    width: 20px;
+    padding-right: 10px;
+  }
+
+  .lista_izq p{
+    font-size: 13px;
+    cursor:pointer;
+  }
+
+  .lista_izq a {
+    text-decoration: none;
+    color: inherit;         
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  /*----------------------------------*/
+  /*   MENU CENTRO */
+  
+  #tabla_horario {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    table-layout: fixed;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  #tabla_horario th,
+  #tabla_horario td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    height: 50px;
+    color: #333;
+    background-color: #fff;
+  }
+
+  /* Encabezado tabla */
+  #tabla_horario th {
+    background-color: #f0f0f0;
+    color: #444;
+    font-weight: 500;
+    padding: 10px 5px;
+  }
+
+  /* Celdas rellenas */
+  #tabla_horario td:not(:empty) {
+    background-color: #e7f2e7;
+    color: #215732;          
+    font-weight: 500;
+    border: 2px solid #215732;
+  }
+
+  /* columna horas */
+  #tabla_horario th:first-child,
+  #tabla_horario td:first-child {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #444;
+    font-weight: 500;
+    padding: 10px 5px;
+  }
+
+  #tabla_horario .asignatura {
+    margin-bottom: 8px;
+  }
+
+  #select_cuatrimestre {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  #select_cuatrimestre label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  #cuatrimestre,
+  #cuatrimestre_select {
+    width: 350px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+  }
+
+  #cuatrimestre:focus,
+  #cuatrimestre_select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px #007bff88;
+  }
+
+  /*----------------------------------*/
+  /*   PIE  */
+
+  footer {
+    background-color: #444;
+    color: white;
+    font-size: 13px;
+    padding: 0 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #p_izq{
+    margin-left: 0px;
+  }
+
+
+  #p_der{
+    margin-right: 20px;
+  }
+
+

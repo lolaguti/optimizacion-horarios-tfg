@@ -1,0 +1,295 @@
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    height: 80px;
+  }
+
+  .lado_izq{
+    position: static;
+    width: 10%;
+    padding: 20px;
+  }
+
+  .lado_centro{
+    position: static;
+    width:70%;
+    padding: 20px;
+  }
+
+  .lado_der{
+    position: static;
+    width: 28%;
+    padding: 20px;
+  }
+
+  #header_izq img{
+    height: 80px;
+  }
+
+  #header_centro h1{
+    font-size: 20px;
+    color: #989a9a;
+  }
+
+  .main-header .logo img {
+    height: 40px;
+  }
+  
+  .user-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  
+  .user-controls img {
+    height: 20px;
+  }
+  
+  /*----------------------------------*/
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    overflow: auto;
+    flex-direction: column;
+    }
+  
+  .menu{
+    display: flex;
+    min-height: 80vh;
+  }
+
+  /*----------------------------------*/
+  /* MENU IZQUIERDO */
+
+  .lista_izq{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-color: #333;
+    border-style: solid;
+    border-left: white;
+    border-right: white;
+    border-top: white;
+    border-width: 1px;
+  }
+
+  .lista_izq img{
+    width: 20px;
+    padding-right: 10px;
+  }
+
+  .lista_izq p{
+    font-size: 13px;
+    cursor:pointer;
+  }
+
+  .lista_izq a {
+    text-decoration: none;
+    color: inherit;         
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  /*----------------------------------*/
+  /*   MENU CENTRO */
+  
+  .imagen_central {
+    position: relative;
+  }
+  
+  .imagen_central img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  #texto_central {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .avisos {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 14px;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /*----------------------------------*/
+  /*   MENU DERECHO */
+
+  #menu_der {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja_der{
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #info_user {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #info_user .username {
+    font-weight: bold;
+  }
+
+  #info_user img{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 50%;
+  }
+  
+  #info_user #texto_user {
+    color: #1d9451;
+    font-weight: bold;
+  }
+  
+  #caja_buscar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+
+  #caja_buscar p{
+    font-size: 20px;
+    color:#3e4142
+  }
+
+  #buscar {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  #buscar input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  #buscar button {
+    width: 40px;
+    border: none;
+    background: #fff; 
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #buscar button img {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  
+  .boton_der {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .boton_der img{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 40px;
+    
+  }
+
+  .caja_icono{
+    background-color: rgba(0,0,0,0.2);
+    height: 100px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton_der p{
+    color: white;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
+  #icono1{
+    background-color:  #009ff3;
+  }
+
+  #icono2{
+    background-color:  #7d66c1;
+  }
+
+  #icono3{
+    background-color:  #00bf9d;
+  }
+
+  /*----------------------------------*/
+  /*   PIE  */
+
+  footer {
+    background-color: #444;
+    color: white;
+    font-size: 13px;
+    padding: 0 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #p_izq{
+    margin-left: 0px;
+  }
+
+  #p_der{
+    margin-right: 20px;
+  }
+  
